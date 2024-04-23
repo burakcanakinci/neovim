@@ -78,6 +78,5 @@ vim.keymap.set("n", "<Leader>l", ":bnext<CR>")
 -- vim.keymap.set("n", "<A-Right>", ":bn<CR>")  -- Next buffer with Alt+Right Arrow
 -- vim.keymap.set("n", "<A-Left>", ":bp<CR>")  -- Previous buffer with Alt+Left Arrow
 
-
 -- buffer wipe
 vim.keymap.set("n", "<leader>q", ":bw!<CR>")

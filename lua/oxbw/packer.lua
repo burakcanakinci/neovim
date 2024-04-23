@@ -5,9 +5,10 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use 'ThePrimeagen/vim-be-good'
   use 'wbthomason/packer.nvim'
 
+  use 'tpope/vim-surround'
+  use 'ThePrimeagen/vim-be-good'
   use 'windwp/nvim-autopairs'
   use 'sbdchd/neoformat'
   use 'terrortylor/nvim-comment'
@@ -46,6 +47,10 @@ return require('packer').startup(function(use)
 	      {'L3MON4D3/LuaSnip'},
           }
       }
-  use 'tpope/vim-surround'
+  use {"neovim/nvim-lspconfig",
+      opts = {
+        inlay_hints = { enabled = true },
+      },
+    }
 end)
 
